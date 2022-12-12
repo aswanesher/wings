@@ -1,4 +1,4 @@
-# ![Laravel Penjualan App - Technical test PT. Hermes Solusi Integrasi]
+# [Laravel Penjualan App - Technical test PT. Hermes Solusi Integrasi]
 
 ----------
 
