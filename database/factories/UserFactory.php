@@ -30,7 +30,7 @@ class UserFactory extends Factory
             'user' => 'smit',
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
-            'password' => Hash::make('_sm1t_OK'),
+            'password' => Hash::make('password'),
             'remember_token' => Str::random(10),
         ];
     }

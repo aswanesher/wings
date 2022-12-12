@@ -34,7 +34,7 @@
                         <td>{{ $item->total }}</td>
                         <td>{{ \Carbon\Carbon::createFromTimeStamp(strtotime($item->date))->toFormattedDateString() }}</td>
                         <td>@foreach ($item->detail as $d)
-                            - {{ $d->products->product_name }}<br>
+                            - {{ $d->products->product_name }} x{{ $d->quantity }}<br>
                         @endforeach</td>
                     </tr>
                     @endforeach
