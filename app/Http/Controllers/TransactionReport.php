@@ -10,7 +10,7 @@ class TransactionReport extends Controller
 {
     public function report()
     {
-        $data = TransactionHeader::with('detail','users')->paginate(1);
+        $data = TransactionHeader::with('detail','users')->paginate(10);
         //dd($data);
         return view('report.index', compact('data'));
     }
