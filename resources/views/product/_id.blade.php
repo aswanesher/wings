@@ -11,6 +11,9 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-md-8">
+            <form action="{{ route('addtocart') }}" method="POST">
+            @csrf
+            <input type="hidden" name="product" value="{{ $product->id }}">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col-auto d-none d-lg-block">
                     <img src="https://via.placeholder.com/150" alt="">
@@ -24,9 +27,10 @@
                     <p class="card-text mb-auto text-muted">Price unit : {{ $product->unit }}</p>
                 </div>
                 <div class="col-md-2 p-4 d-flex flex-column position-static justify-content-center text-center">
-                    <a href="#" class="btn btn-danger">Buy</a>
+                    <button type="submit" class="btn btn-danger">Buy</button>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 </div>
